@@ -125,12 +125,16 @@ h2 {
     z-index: 0;
 }
 
-.banner {
+#banners {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -25;
 } 
+
+#banners img {
+    display: block;
+}
 
 #content-text {
     padding-left: 371px;

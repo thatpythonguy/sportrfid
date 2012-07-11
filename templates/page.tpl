@@ -3,9 +3,15 @@
 {% block title %}{{ m.rsc[id].title }}{% endblock %}
 {% block page_id %}{{ page_id }}{% endblock %}
 
+{% block _js_include_extra %}
+    <script type="text/javascript">
+        $(function() { $('#content-text').css('min-height', $('#banners').height()); });
+    </script>
+{% endblock %}
+
 {% block content %}
     <img id="circles" src="/lib/images/circles.png" />
-    <div class="banner">
+    <div id="banners">
         {% if m.rsc[id].o.relation %}
             {% for img in m.rsc[id].o.relation[1].media %}
                 {% image img width=402 lossless %}
@@ -16,11 +22,7 @@
             {% endfor %}
         {% endif %}
     </div>
-    {% if m.rsc[id].o.relation %}
-    <div id="content-text" style="min-height: {{ m.media[m.rsc[id].o.relation[1].media[1]].height }}px;">
-    {% else %}
-    <div id="content-text" style="min-height: {{ m.media[m.rsc[id].media[1]].height }}px;">
-    {% endif %}
+    <div id="content-text">
         <div id="page-title">
             <div id="page-title-background"><!-- transparent background --></div>
             <div id="page-title-content">
