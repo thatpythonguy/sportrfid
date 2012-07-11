@@ -1,0 +1,35 @@
+% Zotonic site configuration for sportrfid.
+[
+    % This site is enabled or not.
+    {enabled, true},
+
+    % Atomic hostname, MUST be equal to the directory name of this site.
+    {host, sportrfid},
+
+    % Hostname on which this site runs
+    {hostname, "sportrfid:8000"},
+
+    % Aliases which should redirect to the primary hostname
+    %{hostalias, "www.example.com"},
+    %{hostalias, "example.com"},
+
+    % PostgreSQL database connection
+    {dbhost, "127.0.0.1"},
+    {dbport, 5432},
+    {dbuser, "zotonic"},
+    {dbpassword, "zotonic"},
+    {dbdatabase, "zotonic"},
+    {dbschema, "sportrfid"},
+
+    % Depcache settings. The maximum size in Mbs
+    {depcache_memory_max, 100},
+
+    % Password for the 'admin' user.
+    {admin_password, "admin"},
+
+    % Title
+    {title, "SportRFID"},
+
+    % What skeleton site this site is based on; for installing the initial data.
+    {skeleton, empty}
+].

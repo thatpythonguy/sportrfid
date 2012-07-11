@@ -1,0 +1,221 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 15px/22px Arial, sans-serif;
+}
+
+#container {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    font: 15px/22px Arial, sans-serif;
+}
+
+/* COMMON ELEMENTS *********************************************/
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.6em;
+}
+
+h1 {
+    margin: 3px;
+}
+
+/* HEADER ====================================== */
+#header {
+    background: url(/lib/images/header.png);
+    height: 154px;
+}
+
+#title a {
+    width: 450px;
+    height: 130px;
+    display: block;
+}
+
+#ribbon {
+    z-index: 10;
+    background: url(/lib/images/RFID.png);
+    height: 21px;
+    width: 1001px;
+    position: absolute;
+    top: 145px;
+    left: 58px;
+}
+
+#menu {
+    z-index: 10;
+    height: 36px;
+    width: 948px;
+    position: absolute;
+    top:165px;
+    left: 82px;
+    font-size: 16px;
+}
+
+#menu-background {
+    z-index: 10;
+    height: 36px;
+    width: 948px;
+    background-color: #67cbd8;
+    position: absolute;
+    top:165px;
+    left: 82px;
+    font-size: 16px;
+    /* Universal Opacity */
+    filter: alpha(opacity:0.74);
+    KHTMLOpacity: 0.74;
+    MozOpacity: 0.74;
+    -khtml-opacity:.74;
+    -ms-filter:”alpha(opacity=74)”;
+    -moz-opacity:.74;
+    filter:alpha(opacity=74);
+    opacity:.74;
+}
+
+
+#menu ul#navigation {
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+}
+
+#navigation li {
+    float: left;
+    color: white;
+    height: 36px;
+}
+
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    height: 20px;
+    padding: 8px 15px;
+    display: block;
+}
+
+#navigation li a:hover {
+    font-weight: bold;
+}
+
+#navigation li.selected {
+    color: #fc8a37;
+}
+
+#navigation li.selected a {
+    color: #fc8a37;
+    background: none;
+}
+
+/* PAGE ====================================== */
+#content-full {
+    position: relative;
+    z-index: 0;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -25;
+} 
+
+#content-text {
+    padding-left: 371px;
+    padding-top: 38px;
+}
+
+#page-title {
+    position: relative;
+    width: 688px;
+}
+
+#page-title-content {
+    padding: 48px 75px;
+    z-index: 20;
+    color: white;
+}
+
+#page-title-background {
+    z-index: -15;
+    background-color: #47769f;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Universal Opacity */
+    filter: alpha(opacity:0.83);
+    KHTMLOpacity: 0.83;
+    MozOpacity: 0.83;
+    -khtml-opacity:.83;
+    -ms-filter:”alpha(opacity=83)”;
+    -moz-opacity:.83;
+    filter:alpha(opacity=83);
+    opacity:.83;
+}
+
+#page-body {
+    padding: 48px 75px;
+}
+
+#circles {
+    z-index: 50;
+    position: absolute;
+    top: 84px;
+    left: 277px;
+    /* Universal Opacity */
+    filter: alpha(opacity:0.18);
+    KHTMLOpacity: 0.18;
+    MozOpacity: 0.18;
+    -khtml-opacity:.18;
+    -ms-filter:”alpha(opacity=18)”;
+    -moz-opacity:.18;
+    filter:alpha(opacity=18);
+    opacity:.18;
+}
+
+/* UTILITIES ====================================== */
+.clear {
+    clear: both;
+}
+
+
+/* FOOTER ====================================== */
+#footer {
+    position: relative;
+    background-color: #353535;
+}
+
+#footer-content {
+    font-size: 14px;
+    color: white;
+    padding: 45px;
+    text-align: center;
+}
+
+#footer-content .figure {
+    display: block;
+    width: 26px;
+    float: left;
+    margin: 0 2px;
+}
+
+#footer-content #social-icons {
+    width: 605px; 
+    margin: 0 auto 10px auto;
+    padding-left: 340px;
+    height: 15px;
+}
+
+#footer-content a {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer-content a:hover {
+    color: white;
+    text-decoration: none;
+}
+
