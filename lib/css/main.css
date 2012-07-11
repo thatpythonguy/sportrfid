@@ -215,11 +215,11 @@ h2 {
     display: block;
     width: 26px;
     float: left;
-    margin: 0 2px;
+    margin: 0;
 }
 
 #footer-content #social-icons {
-    width: 605px; 
+    width: 510px; 
     margin: 0 auto 10px auto;
     padding-left: 340px;
     height: 15px;
