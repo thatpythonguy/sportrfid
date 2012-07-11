@@ -114,12 +114,9 @@ h2 {
 }
 
 #navigation li.selected {
-    color: #fc8a37;
 }
 
 #navigation li.selected a {
-    color: #fc8a37;
-    background: none;
 }
 
 /* PAGE ====================================== */
