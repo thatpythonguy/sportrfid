@@ -5,39 +5,26 @@
 
 {% block _js_include_extra %}
     <script type="text/javascript">
-        $(function() { $('#content-text').css('min-height', $('#banners').height()); });
+        $(function() { 
+            $('#content-text').css('min-height', $('#banners').height()); 
+        });
     </script>
 {% endblock %}
 
 {% block content %}
+    {% with id|menu_trail|first as root_id %}
     <img id="circles" src="/lib/images/circles.png" />
     <div id="banners">
-        {% if m.rsc[id].o.relation %}
-            {% for img in m.rsc[id].o.relation[1].media %}
-                {% image img width=402 lossless %}
-            {% endfor %}
-        {% else %}
-            {% for img in m.rsc[id].media %}
-                {% image img width=402 lossless %}
-            {% endfor %}
-        {% endif %}
+        {% for img in m.rsc[root_id].media %}
+            {% image img width=402 lossless %}
+        {% endfor %}
     </div>
     <div id="content-text">
         <div id="page-title">
             <div id="page-title-background"><!-- transparent background --></div>
             <div id="page-title-content">
-                {% if m.rsc[id].o.relation %}
-                    <h1>{{ m.rsc[id].o.relation[1].title }}</h1>
-                {% else %}
-                    <h1>{{ m.rsc[id].title }}</h1>
-                {% endif %}
-                {% for subpage in m.rsc[id].o.relation[1].s.relation %}
-                    {% ifequal subpage.page_url m.req.path %}
-                        <div>{{ subpage.title }}</div>
-                    {% else %}
-                        <div><a href="{{ subpage.page_url }}">{{ subpage.title }}</a></div>
-                    {% endifequal %}
-                {% endfor %}
+                <h1>{{ m.rsc[root_id].title }}</h1>
+                {% menu root_id=root_id template="includes/_submenu.tpl" %}    
             </div>
             <div class="clear"><!-- transparent background --></div>
         </div>
@@ -45,4 +32,5 @@
             {{ m.rsc[id].body|show_media }}
         </div>
     </div>
+    {% endwith %}
 {% endblock %}
