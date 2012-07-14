@@ -26,7 +26,7 @@
 
                 <div id="menu-background"><!-- transparent background --></div>
                 <div id="menu">
-                    {% menu id=main_menu template="includes/_menu.tpl" %}
+                    {% menu id=id template="includes/_menu.tpl" %}
                 </div>
             </div>
 

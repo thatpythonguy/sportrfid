@@ -124,11 +124,12 @@ ul.submenu ul {
     text-decoration: underline;
 }
 
-#navigation li.selected {
+.submenu li.selected {
+    color: #222e49 !important;
 }
 
 #navigation li.selected a {
-    text-decoration: underline;
+    color: #222e49;
 }
 
 /* PAGE ====================================== */
