@@ -156,7 +156,7 @@ ul.submenu ul {
     left: 0px;
     font-size: 17px;
     color: white;
-    padding: 20px 40px 20px 0px;
+    padding: 20px 40px 60px 0px;
 }
 
 #banners-text p {
@@ -261,8 +261,16 @@ ul.submenu ul {
 /* FOOTER ====================================== */
 #footer {
     position: relative;
+}
+
+#footer-background {
     background-color: #353535;
     z-index: -50;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #footer-content {
@@ -290,6 +298,7 @@ ul.submenu ul {
     margin: 0 auto 10px auto;
     padding-left: 340px;
     height: 15px;
+    z-index: 100;
 }
 
 #home-page #footer-content #social-icons {

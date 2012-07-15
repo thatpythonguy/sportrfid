@@ -7,6 +7,7 @@
     <script type="text/javascript">
         $(function() { 
             $('#content-text').css('min-height', $('#banners').height()-120); 
+            $('#footer-background').css('height', $('#footer').height()); 
         });
     </script>
 {% endblock %}

@@ -1,3 +1,4 @@
+    <div id="footer-background"><!-- footer background --></div>
     <div id="footer-content">
         <div id="social-icons"> 
             <div class="social-text">
