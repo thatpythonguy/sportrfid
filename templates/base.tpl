@@ -14,7 +14,7 @@
         <!--[if IE]>{% lib "css/zp-ie.css" %}<![endif]-->
         {% block html_head_extra %}{% endblock %}
     </head>
-    <body id="{{ page_url }}-page">
+    <body id="{% block page_id %}{% endblock %}-page">
         <div id="container">
             <div id="header">
                 <div id="title">

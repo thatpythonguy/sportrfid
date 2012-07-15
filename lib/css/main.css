@@ -149,6 +149,43 @@ ul.submenu ul {
     display: block;
 }
 
+#banners-text {
+    z-index: 15;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    font-size: 17px;
+    color: white;
+    padding: 20px 40px 20px 0px;
+}
+
+#banners-text p {
+    z-index: 15;
+    background: url(/lib/images/circles_transparent.png) -20px center no-repeat;
+    padding-left: 110px;
+    padding-top: 25px;
+    margin: 0;
+}
+
+#banners-text-background {
+    z-index: -15;
+    background-color: #0e2942;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Universal Opacity */
+    filter: alpha(opacity:0.83);
+    KHTMLOpacity: 0.83;
+    MozOpacity: 0.83;
+    -khtml-opacity:.83;
+    -ms-filter:”alpha(opacity=83)”;
+    -moz-opacity:.83;
+    filter:alpha(opacity=83);
+    opacity:.83;
+}
+
 #content-text {
     padding-left: 371px;
     padding-top: 38px;
@@ -189,6 +226,16 @@ ul.submenu ul {
     padding: 48px 75px;
 }
 
+#page-body-home {
+    width: 560px;
+    float: right;
+    padding: 30px 70px 0 0;
+}
+
+#page-body-home-text {
+    padding: 40px 0 0 120px;
+}
+
 #circles {
     z-index: 50;
     position: absolute;
@@ -215,6 +262,7 @@ ul.submenu ul {
 #footer {
     position: relative;
     background-color: #353535;
+    z-index: -50;
 }
 
 #footer-content {
@@ -231,11 +279,21 @@ ul.submenu ul {
     margin: 0;
 }
 
+#footer-content .social-text {
+    width: 60px;
+    float: left;
+    margin: 0;
+}
+
 #footer-content #social-icons {
     width: 510px; 
     margin: 0 auto 10px auto;
     padding-left: 340px;
     height: 15px;
+}
+
+#home-page #footer-content #social-icons {
+    padding-left: 650px;
 }
 
 #footer-content a {
@@ -248,3 +306,6 @@ ul.submenu ul {
     text-decoration: none;
 }
 
+#footer-message {
+    padding-top: 40px;
+}
