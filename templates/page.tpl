@@ -16,7 +16,7 @@
     <img id="circles" src="/lib/images/circles.png" />
     <div id="banners">
         {% for item in m.rsc[root_id].media %}
-            {% ifequal item.category.name 'image' %}
+            {% ifequal item.category.name 'banner' %}
                 {% image item width=402 lossless %}
             {% endifequal %}
         {% endfor %}
