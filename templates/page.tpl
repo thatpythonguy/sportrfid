@@ -15,8 +15,10 @@
     {% with id|menu_trail|first as root_id %}
     <img id="circles" src="/lib/images/circles.png" />
     <div id="banners">
-        {% for img in m.rsc[root_id].media %}
-            {% image img width=402 lossless %}
+        {% for item in m.rsc[root_id].media %}
+            {% ifequal item.category.name 'image' %}
+                {% image item width=402 lossless %}
+            {% endifequal %}
         {% endfor %}
     </div>
     <div id="content-text">
