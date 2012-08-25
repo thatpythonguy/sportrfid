@@ -147,6 +147,7 @@ ul.submenu ul {
     top: 0;
     left: 0;
     z-index: -25;
+    width: 562px;
 } 
 
 #banners img {
@@ -161,6 +162,7 @@ ul.submenu ul {
     font-size: 17px;
     color: white;
     padding: 20px 40px 60px 0px;
+    width: 522px;
 }
 
 #banners-text p {
@@ -233,7 +235,7 @@ ul.submenu ul {
 #page-body-home {
     width: 560px;
     float: right;
-    padding: 30px 70px 0 0;
+    padding: 10px 70px 0 0;
 }
 
 #page-body-home-text {

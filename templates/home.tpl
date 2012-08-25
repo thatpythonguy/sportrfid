@@ -24,12 +24,15 @@
     <div id="content-text">
         <div id="page-body-home">
             {% with m.media[m.rsc['page_home'].media[2]].oembed_url|replace:["http://www.youtube.com/watch\\?v=",""] as vid_code %}
-                <iframe width="560" height="315" src="http://www.youtube.com/embed/{{ vid_code }}" frameborder="0" allowfullscreen></iframe>
+            {% if vid_code %}
+                <iframe style="padding-top:20px;" width="560" height="315" src="http://www.youtube.com/embed/{{ vid_code }}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
             {% endwith %}
             <div id="page-body-home-text">
-                {{ m.rsc['page_home'].body }}
+                {{ m.rsc['page_home'].body|show_media }}
             </div>
         </div>
+        <div class="clear"><!-- clear --></div>
     </div>
     {% endwith %}
 {% endblock %}
