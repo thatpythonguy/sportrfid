@@ -232,6 +232,10 @@ ul.submenu ul {
     padding: 48px 75px;
 }
 
+#page-body a {
+    color: #727272;
+}
+
 #page-body-home {
     width: 560px;
     float: right;

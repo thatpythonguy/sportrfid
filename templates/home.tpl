@@ -15,7 +15,11 @@
 {% block content %}
     {% with id|menu_trail|first as root_id %}
     <div id="banners">
-        {% image m.rsc['page_home'].media[1] width=562 lossless %}
+        {% for item in m.rsc['page_home'].media %}
+            {% ifequal item.category.name 'banner' %}
+                {% image item width=562 lossless %}
+            {% endifequal %}
+        {% endfor %}
         <div id="banners-text">
             <div id="banners-text-background"><!-- background --></div>
             <div>{{ m.rsc['page_home_sidebar'].body }}</div>
