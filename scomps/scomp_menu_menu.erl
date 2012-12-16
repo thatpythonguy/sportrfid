@@ -58,4 +58,4 @@ render(Params, _Vars, Context) ->
                 | Params
             ]
     end,
-    {ok, z_template:render(proplists:get_value(template, Params, "_menu.tpl"), Vars, Context)}.
+    {ok, z_template:render(proplists:get_value(template, Params, "includes/_menu.tpl"), Vars, Context)}.
